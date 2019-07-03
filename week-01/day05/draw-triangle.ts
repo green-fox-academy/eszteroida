@@ -11,3 +11,11 @@ let lineCount: number = 4;
 //
 // The triangle should have as many lines as lineCount is
 
+for (let i: number = 1; for <= lineCount; i++) {
+    
+
+
+}
+
+
+}
