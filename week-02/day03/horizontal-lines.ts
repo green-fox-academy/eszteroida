@@ -10,9 +10,21 @@ const ctx = canvas.getContext('2d');
 // and draws a 50 long horizontal line from that point.
 // Draw at least 3 lines with that function using a loop.
 
-
+function drawLine50(x: number, y: number) {
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + 50, y);
+}
 
 ctx.beginPath();
-ctx.moveTo(100, 100);
-ctx.lineTo(300, 100);
+let a: number = 0;
+
+while (a <= 3) {
+    drawLine50(0, 0);
+    ctx.beginPath();
+    ctx.moveTo(x + 100, y + 100);
+    a++;
+}
+
+
 ctx.stroke();
+

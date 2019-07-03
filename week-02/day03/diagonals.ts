@@ -18,7 +18,6 @@ ctx.strokeStyle = "red";
 
 }
 
-
 //ctx.strokeStyle = "green";
 ctx.beginPath();
 ctx.moveTo(i, i);
@@ -27,8 +26,8 @@ ctx.stroke();
 
 //ctx.strokeStyle = "red";
 ctx.beginPath();
-ctx.moveTo(i, 400);
-ctx.lineTo(600, i);
+ctx.moveTo(0, 400);
+ctx.lineTo(600, 0);
 ctx.stroke();
 
 
