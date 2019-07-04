@@ -5,5 +5,16 @@
 
 let numList: number[] = [1, 2, 3, 8, 5, 6];
 
+let numListNew: number[] = numList.map(function (value) {
 
-console.log();
+    if (value == 8) {
+        return 4;
+
+    } else {
+        return value;
+
+    }
+}
+)
+
+console.log(numListNew);

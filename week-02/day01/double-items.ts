@@ -6,5 +6,10 @@
 // It should print: ['GinGin', 'WhiskeyWhiskey', 'WineWine', 'BeerBeer']`
 
 let drinks: string[] = ['Gin', 'Whiskey', 'Wine', 'Beer'];
-drinks.map()
+
+let doubleDrinks: string[] = drinks.map(function(item){
+    
+    return item + item;
+
+});
 
