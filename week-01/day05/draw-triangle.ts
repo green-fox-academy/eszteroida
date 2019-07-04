@@ -12,6 +12,6 @@ let lineCount: number = 4;
 // The triangle should have as many lines as lineCount is
 
 for (let i: number = 0; for <= lineCount; i++) {
-    console.log('*');
+    console.log
 
 }

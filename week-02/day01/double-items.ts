@@ -7,9 +7,10 @@
 
 let drinks: string[] = ['Gin', 'Whiskey', 'Wine', 'Beer'];
 
-let doubleDrinks: string[] = drinks.map(function(item){
-    
+let doubleDrinks: string[] = drinks.map(function (item) {
+
     return item + item;
 
 });
 
+console.log(doubleDrinks);
