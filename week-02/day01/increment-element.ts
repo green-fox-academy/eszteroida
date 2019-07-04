@@ -4,7 +4,8 @@
 // -  Increment the third element simply by accessing it
 // -  Log the third element to the console
 
-let numList: number[]= [1, 2, 3, 4, 5];
- numList[2] += 1
+let numList: number[] = [1, 2, 3, 4, 5];
+
+numList[2] += 1
 
 console.log(numList);

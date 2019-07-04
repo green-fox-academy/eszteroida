@@ -5,5 +5,4 @@
 
 let abc: string[] = ["Arthur", "Boe", "Chloe"];
 
-
 console.log(abc.reverse());
