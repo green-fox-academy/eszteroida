@@ -4,10 +4,10 @@
 
 let far: string[] = ['bo', 'anacond', 'koal', 'pand', 'zebr'];
 
-function appendA {
+function appendA() {
 
-    let far[] = 'far[]' + 'a';
-} 
+    ;
+}
 
 console.log(appendA(far));
 

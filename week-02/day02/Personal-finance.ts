@@ -5,7 +5,7 @@ let moneySpent: number[] = [500, 1000, 1250, 175, 800, 120];
 //How much did we spend?
 
 
-console.log(`We spent ${sumOfMoney}`);
+console.log(`We spent ${}`);
 
 //Which was our greatest expense?
 

@@ -6,5 +6,5 @@
 // It should print: ['GinGin', 'WhiskeyWhiskey', 'WineWine', 'BeerBeer']`
 
 let drinks: string[] = ['Gin', 'Whiskey', 'Wine', 'Beer'];
-drinks
+drinks.map()
 

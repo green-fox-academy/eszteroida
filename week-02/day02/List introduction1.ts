@@ -19,7 +19,6 @@ console.log(namesList[2]);
 for (let i: number = 0; i < namesList.length; i++) {
     console.log(`${i + 1}. ${namesList[i]}`);
 
-    console.log(`édslkasdlkfj ${}`)
 }
 
 namesList.splice(1, 1);

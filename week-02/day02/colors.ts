@@ -8,7 +8,7 @@
 // -  In `colors[2]` store the shades of pink:
 //    `"orchid", "violet", "pink", "hot pink"`
 
-let colors = [];
+let colors = [["lime", "forest green", "olive", "pale green", "spring green"], ["orange red", "red", "tomato"], ["orchid", "violet", "pink", "hot pink"]];
 
 console.log(colors[0]);
 console.log(colors[1]);
