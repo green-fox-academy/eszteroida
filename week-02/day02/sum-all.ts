@@ -4,6 +4,10 @@
 // -  Log the sum of the elements in `ai` to the console
 
 let ai: number[] = [3, 4, 5, 6, 7];
+let sumOf: number = 0;
 
-ai.
+for (let i: number = 0; i <= ai.length - 1; i++) {
+    sumOf += ai[i];
+}
+console.log(sumOf);
 
