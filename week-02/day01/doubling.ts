@@ -5,9 +5,9 @@
 // -  Log the result of `doubling(baseNum)` to the console
 
 let baseNum: number = 123;
-function doubling() {
-
+function doubling(item: number) {
+    return item + item;
 
 }
 
-doubling();
+console.log(doubling(baseNum));
