@@ -14,16 +14,8 @@ function makingMatches(item1, item2) {
                 matches.push(item1[i], item2[j]);
             }
         }
-    } 
+    }
     return matches;
 }
-
-// function makingMatches(item1, item2) {
-//     let matches: string[] ;
-//     for (let i = 0; i <= item1.length -1; i++) {
-
-//             matches[i] = (item1[i], item2[i]);
-//             } return matches;
-//         }
 
 console.log(makingMatches(girls, boys));
