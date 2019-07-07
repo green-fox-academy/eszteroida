@@ -20,10 +20,17 @@ let hashmap = {
 let sorszam: number;
 
 for (let i: number = 0; i <= notSoCrypticMessage.length - 1; i++) {
-    sorszam = notSoCrypticMessage[i];
-    out += hashmap[sorszam];
+ sorszam = notSoCrypticMessage[i];
+     out += hashmap[sorszam];
 
-}
+ }
+// simplified V1:
+
+// notSoCrypticMessage.forEach(function (value) {
+//     out += hashmap[value];
+// })
+
+// simplified V2:
 
 // for (let i: number = 0; i <= notSoCrypticMessage.length - 1; i++) {
 //     out += hashmap[notSoCrypticMessage[i]];
