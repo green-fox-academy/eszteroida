@@ -6,8 +6,14 @@
 let ai: number[] = [3, 4, 5, 6, 7];
 let sumOf: number = 0;
 
-for (let i: number = 0; i <= ai.length - 1; i++) {
-    sumOf += ai[i];
-}
-console.log(sumOf);
+//for (let i: number = 0; i <= ai.length - 1; i++) {
+//    sumOf += ai[i];
+// }
+// console.log(sumOf);
 
+
+ai.forEach(function (item) {
+    sumOf += item;
+})
+
+console.log(sumOf);

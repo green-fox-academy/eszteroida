@@ -1,6 +1,6 @@
 'use strict';
 declare function require(path: string): any;
-export {};
+export { };
 
 const fs = require('fs');
 
@@ -9,10 +9,14 @@ const fs = require('fs');
 // It should return zero if it can't open the file, and
 // should not raise any error.
 
-let fileName : string = '';
-function numberOfLines () {
+let content;
+try {
+    content = fs.readFileSync('frus.txt', 'utf-8');
+    console.log(typeof content);
 
-
+} catch (e){
+    console.log(e.message);
+    content ='';
 }
-
-console.log();
+let lines: string[] = content.split('n');
+console.log(lines.length);

@@ -4,13 +4,15 @@
 
 let far: string[] = ['bo', 'anacond', 'koal', 'pand', 'zebr'];
 
-function appendA() {
-
-    ;
+function appendA(item) {
+  for(let i: number = 0; i<=item.length-1;i++) {
+      item[i] += 'a';
+  }
+  return item;
 }
 
 console.log(appendA(far));
 
 // The output should be: 'boa', 'anaconda', 'koala', 'panda', 'zebra'
 
-export = appendA;
+//export = appendA;Ź
