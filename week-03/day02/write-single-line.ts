@@ -16,8 +16,8 @@ let content;
 
 try {
     content = fs.readFileSync('my-file.txt', 'utf-8');
-    content = content + manipulated;
-
+    fs.writeFileSync('my-file.txt', content + manipulated);
+    
 } catch (e) {
     content = "Unable to write file: my-file.txt";
 }
