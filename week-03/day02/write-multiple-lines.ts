@@ -26,6 +26,6 @@ try {
     }
 
 } catch (e) {
-    content = "Unable to write file the file you selected";
+    content = '';
 }
 console.log(content);
