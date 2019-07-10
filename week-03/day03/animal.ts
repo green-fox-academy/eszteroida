@@ -14,14 +14,14 @@ class animal {
     thirst: number;
 
     eat(): void {
-        this.hunger --;
+        this.hunger--;
     }
     drink(): void {
-        this.thirst --;
+        this.thirst--;
     }
     play(): void {
-        this.hunger ++;
-        this.thirst ++;
+        this.hunger++;
+        this.thirst++;
     }
     constructor(hunger: number = 50, thirst: number = 50) {
         this.hunger = hunger;
@@ -31,26 +31,9 @@ class animal {
 
 let dog = new animal();
 console.log(dog);
-
-dog.play();
-console.log(dog);
 dog.eat();
 console.log(dog);
 dog.drink();
 console.log(dog);
 dog.play();
-console.log(dog);
-dog.play();
-console.log(dog);
-dog.play();
-console.log(dog);
-dog.drink();
-console.log(dog);
-dog.drink();
-console.log(dog);
-dog.drink();
-console.log(dog);
-dog.drink();
-console.log(dog);
-dog.drink();
 console.log(dog);
