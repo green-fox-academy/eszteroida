@@ -28,6 +28,8 @@ class BlogPost {
         this.publicationDate = publicationDate;
         this.text = text;
     }
+
+
 }
 let firstBlogPost: BlogPost = new BlogPost ('Lorem Ipsum', 'John Doe', '2000.05.04.', 'Lorem ipsum dolor sit amet.');
 let secondBlogPost: BlogPost = new BlogPost ('Wait but why', 'Tim Urban', '2010.10.10.', 'A popular long-form, stick-figure-illustrated blog about almost everything.');
@@ -36,3 +38,8 @@ let thirdBlogPost: BlogPost = new BlogPost ('One Engineer Is Trying to Get IBM t
 console.log(firstBlogPost);
 console.log(secondBlogPost);
 console.log(thirdBlogPost);
+
+// toString(): string {
+
+//     return ``
+// }
