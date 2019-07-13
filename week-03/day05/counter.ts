@@ -13,7 +13,7 @@ class Counter {
     initialValue: number;
 
     constructor(integer?: number, initialValue?: number) {
-        this.integer = integer;
+        this.integer = integer || 0;
         this.initialValue = this.integer;
     }
 
@@ -35,10 +35,14 @@ class Counter {
     }
 }
 let szamolo = new Counter(123);
+let szamolo2 = new Counter();
 szamolo.get();
 szamolo.add(45);
 szamolo.get();
 szamolo.reset();
-
+szamolo2.get();
+szamolo2.add(45);
+szamolo2.get();
+szamolo2.reset();
 
 
