@@ -10,9 +10,15 @@
 
 class Counter {
     integer: number;
+    initialValue: number;
 
-    add(number?: number) {
-        this.integer += number || 1;
+    constructor(integer?: number, initialValue?: number) {
+        this.integer = integer;
+        this.initialValue = this.integer;
+    }
+
+    add(integer?: number) {
+        this.integer += integer || 1;
     }
 
     // another solution
@@ -23,18 +29,16 @@ class Counter {
     get() {
         console.log(this.integer);
     }
+
     reset() {
-        this.integer = this.integer;
+        console.log(this.integer = this.initialValue);
     }
-    constructor(integer?: number) {
-        this.integer = integer || 0;
-    }
-
 }
-
-let szamolo = new Counter(65);
-console.log(szamolo);
-szamolo.add(13);
+let szamolo = new Counter(123);
 szamolo.get();
-console.log(szamolo.reset());
+szamolo.add(45);
+szamolo.get();
+szamolo.reset();
+
+
 
