@@ -13,3 +13,7 @@
 // * size should depend on a variable
 // ** Relax, a matrix is just like an array
 
+let rows = [];
+let numberoOfRows: number = 4;
+
+

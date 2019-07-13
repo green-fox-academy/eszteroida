@@ -9,7 +9,7 @@
 // Every animal can drink() which decreases their thirst by one
 // Every animal can play() which increases both by one
 
-class animal {
+class Animal {
     hunger: number;
     thirst: number;
 
@@ -29,7 +29,7 @@ class animal {
     }
 }
 
-let dog = new animal();
+let dog = new Animal();
 console.log(dog);
 dog.eat();
 console.log(dog);
@@ -37,3 +37,5 @@ dog.drink();
 console.log(dog);
 dog.play();
 console.log(dog);
+
+export {Animal};
