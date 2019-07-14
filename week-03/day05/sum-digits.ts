@@ -17,5 +17,4 @@ function sumOfDigits(inputNumber: number) {
     }
 }
 
-
 console.log(sumOfDigits(514698));
