@@ -8,13 +8,12 @@
 // and find a way to get the the whole number portion of that number.
 
 
-function sumOfDigits(inputNumber: number) {
-    if (inputNumber <= 9) {
-        return inputNumber;
-    } else {
-        // let lastDigit: number = inputNumber % 10;
-        return  Math.floor(inputNumber % 10 + sumOfDigits((inputNumber-inputNumber % 10)/10));
-    }
+function sumOfDigits(inputNumber: number): number {
+    while (inputNumber >= 9) {
+        inputNumber = inputNumber % 10 + (sumOfDigits(Math.floor(inputNumber / 10)));
+
+    } return inputNumber;
 }
 
-console.log(sumOfDigits(514698));
+console.log(sumOfDigits(1234567));
+
