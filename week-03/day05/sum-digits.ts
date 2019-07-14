@@ -7,13 +7,15 @@
 // To remove the rightmost digit you must divide (/) the number by 10 
 // and find a way to get the the whole number portion of that number.
 
+
 function sumOfDigits(inputNumber: number) {
-    let sum: number = 0;
-    while (inputNumber < 10) {
-        sum += inputNumber % 10 + Math.floor(inputNumber / 10);
-        
-        return sum;
+    if (inputNumber <= 9) {
+        return inputNumber;
+    } else {
+        // let lastDigit: number = inputNumber % 10;
+        return  Math.floor(inputNumber % 10 + sumOfDigits((inputNumber-inputNumber % 10)/10));
     }
 }
 
-console.log(sumOfDigits(1679));
+
+console.log(sumOfDigits(514698));
