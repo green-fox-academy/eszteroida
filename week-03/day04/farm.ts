@@ -10,22 +10,30 @@ import { Animal } from '../day03/animal'
 
 class Farm {
     listOfAnimals: string[] = [];
-    slots: number = 2;
+    slots: number = 5;
 
-    breed(): void {
+    constructor(listOfAnimals: Animal[], slots: number) {
+        this.listOfAnimals = this.listOfAnimals;
+        this.slots = slots;
+    }
+    breed() {
         if (this.slots > 0) {
-            let newaminal = new Animal();
-            this.slots --;
+            this.listOfAnimals.push();
+            this.slots--;
         }
-        
     }
     slaughter() {
-
+        //this.listOfAnimals.sort();
+        this.listOfAnimals.reverse();
+        this.listOfAnimals.pop();
+        this.slots++;
     }
-
 }
 
-let newFarm = new Farm();
+let newFarm = new Farm(Animal[], 10);
 newFarm.breed();
+newFarm.breed();
+newFarm.breed();
+newFarm.slaughter();
 console.log(newFarm);
 

@@ -38,4 +38,7 @@ console.log(dog);
 dog.play();
 console.log(dog);
 
-export {Animal};
+let dog2 = new Animal();
+dog2.drink();
+console.log(dog2);
+export { Animal };
