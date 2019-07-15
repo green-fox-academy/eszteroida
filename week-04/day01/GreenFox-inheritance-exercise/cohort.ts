@@ -13,11 +13,11 @@ class Cohort {
         this.listOfMentors = listOfMentors;
     }
 
-    addStudent(student) {
+    addStudent(student : Student) {
         this.listOfStudents.push(student);
     }
 
-    addMentor(mentor) {
+    addMentor(mentor: Mentor) {
         this.listOfMentors.push(mentor);
     }
 
