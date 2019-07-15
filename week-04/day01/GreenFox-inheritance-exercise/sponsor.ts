@@ -3,7 +3,7 @@ import Person from './person';
 
 class Sponsor extends Person {
     company: string;
-    hiredStudents: number = 0;
+    hiredStudents: number;
 
     introduce() {
         console.log(`Hi, I'm ${this.name}, a ${this.age} year old ${this.gender} who represents ${this.company} and hired ${this.hiredStudents} students so far.`);
