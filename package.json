@@ -1,0 +1,25 @@
+{
+  "name": "eszter_h",
+  "version": "1.0.0",
+  "description": "Welcome to my repository!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/green-fox-academy/eszter_h.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/green-fox-academy/eszter_h/issues"
+  },
+  "homepage": "https://github.com/green-fox-academy/eszter_h#readme",
+  "devDependencies": {
+    "tape": "^4.11.0"
+  },
+  "dependencies": {
+    "@types/node": "^12.6.8"
+  }
+}
