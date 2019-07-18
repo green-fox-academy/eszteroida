@@ -10,3 +10,8 @@ for (let i: number = 0; i < integers.length; i++) {
 
     console.log(integers[i]);
 }
+//  version 2
+
+//  integers.forEach(function (element) {
+//     console.log(element);
+//     });

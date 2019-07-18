@@ -13,7 +13,21 @@
 // * size should depend on a variable
 // ** Relax, a matrix is just like an array
 
-let rows = [];
-let numberoOfRows: number = 4;
+let size: number = 5;
+let matrix: any[] = [];
 
+for (let r: number = 0; r < size; r++) {
+    let row: number[] = [];
+    for (let c: number = 0; c < size; c++) {
+        if (r + c == size - 1) {
+            row.push(1);
+        } else {
+            row.push(0);
+        }
+    }
+    matrix.push(row);
+}
+matrix.forEach(function (r) {
+    console.log(r);
+});
 
