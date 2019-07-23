@@ -26,3 +26,6 @@ while (line <= 10) {
     console.log(line + ' * ' + number + ' = ' + line*number);
     line++;
 }
+for (let i = 1; i <= 10; i++) {
+    console.log(`${i} * ${number} = ${i * number}`);
+}

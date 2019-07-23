@@ -10,3 +10,10 @@ animals[1] = animals[1] + 'a';
 animals[2] = animals[2] + 'a';
 
 console.log(animals);
+
+
+// version 2 
+
+// animals.forEach(function (element) {
+//     console.log(element += "a");
+// })

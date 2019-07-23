@@ -8,4 +8,5 @@ console.log('BMI is: ' + (bmi));
 console.log('BMI is: ' + Math.round(bmi));
 console.log('BMI is: ' + Math.round((bmi * 10)) / 10);
 console.log('BMI is: ' + (bmi).toFixed(1));
+console.log('BMI is: ' + Math.round((bmi /10 )) * 10);
 

@@ -6,3 +6,13 @@
 let abc: string[] = ["Arthur", "Boe", "Chloe"];
 
 console.log(abc.reverse());
+
+// version 2
+
+let a = abc.shift();
+let c = abc.pop();
+
+abc.unshift(c);
+abc.push(a);
+
+console.log(abc);

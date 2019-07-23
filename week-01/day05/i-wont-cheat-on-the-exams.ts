@@ -11,3 +11,8 @@ while (a < 100) {
     a++;
 
 }
+
+
+for (let i = 1; i <= 100; i++) {
+    console.log(`${i} "I won't cheat on the exam!"`);
+}
