@@ -18,7 +18,7 @@ function bubble(array: number[]) {
     return array.sort(sorting);
 }
 
-function advancedBubble(array: number[], boolean) {
+function advancedBubble(array: number[], boolean : boolean) {
     if (boolean == true) {
         array.sort(sorting);
         return array.reverse();
