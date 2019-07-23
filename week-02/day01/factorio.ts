@@ -10,4 +10,6 @@ function factorio(item: number): number {
     
     } return sumFact;
 }
+
+// i indulhat 2-től is akár
 console.log(factorio(4));

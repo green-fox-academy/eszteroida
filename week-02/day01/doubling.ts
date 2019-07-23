@@ -7,7 +7,11 @@
 let baseNum: number = 123;
 function doubling(item: number) {
     return item + item;
-
 }
+
+// V2
+// function doubling(inputNumber: number): number {
+//     return inputNumber *= 2;
+// }
 
 console.log(doubling(baseNum));

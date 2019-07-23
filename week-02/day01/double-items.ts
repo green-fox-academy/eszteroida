@@ -14,3 +14,8 @@ let doubleDrinks: string[] = drinks.map(function (item) {
 });
 
 console.log(doubleDrinks);
+
+// V2
+// drinks.map(function (item) {
+//     console.log(item + item);
+// })
