@@ -14,4 +14,8 @@ let todoText: string = ' - Buy milk\n';
 todoText = 'My todo:' + '\n' + todoText;
 todoText = todoText.concat(' - Download games');
 todoText = todoText.concat('\n \t - Diablo');
+
+// V2
+// todoText = 'My todo:' + '\n' + todoText + ' - Download games\n' + '\t -Diablo';
+
 console.log(todoText);
