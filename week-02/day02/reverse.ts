@@ -9,6 +9,16 @@ function reverse(reversed: string):string {
     let done:string = reversed.split("").reverse().join("");
 return done;
 }
+
+//  V2
+// function reverse(input: string): string {
+//     let newinput: string = '';
+//     for (let i = 1; i <= input.length; i++) {
+//         let char: string = input.charAt(input.length - i);
+//         newinput += char;
+//     } return newinput;
+// }
+
 console.log(reverse(reversed));
 
 export = reverse;
