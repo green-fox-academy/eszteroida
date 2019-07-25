@@ -18,4 +18,17 @@ function makingMatches(item1, item2) {
     return matches;
 }
 
+// V2
+// function makingMatches(list1: string[], list2: string[]): string[] {
+//     let matchings: string[] = [];
+//     let firstelement: string;
+//     while (list1.length > 0 || list2.length > 0) {
+//         firstelement = list1.shift();
+//         matchings.push(firstelement);
+//         firstelement = list2.shift();
+//         matchings.push(firstelement);
+//     }
+//     return matchings;
+// }
+
 console.log(makingMatches(girls, boys));
