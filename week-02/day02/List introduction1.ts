@@ -16,9 +16,16 @@ console.log(namesList.length);
 
 console.log(namesList[2]);
 
-for (let i: number = 0; i < namesList.length; i++) {
-    console.log(`${i + 1}. ${namesList[i]}`);
+// print out each name
+// console.log(...names);
 
+// OR in diff lines:
+// names.forEach(function (element) {
+//     console.log(element);
+// })
+
+for (let i: number = 0; i < namesList.length - 1; i++) {
+    console.log(`${i + 1}. ${namesList[i]}`);
 }
 
 namesList.splice(1, 1);
