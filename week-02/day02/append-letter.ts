@@ -13,6 +13,16 @@ function appendA(item) {
 
 console.log(appendA(far));
 
+// V2
+// function appendA(list: string[]): string[] {
+//   let newList :string [] = [];
+//   list.forEach(function (element) {
+//       element += 'a';
+//       newList.push(element); 
+//   })
+//   return newList;
+// }
+
 // The output should be: 'boa', 'anaconda', 'koala', 'panda', 'zebra'
 
-//export = appendA;Ź
+//export = appendA;
