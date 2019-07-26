@@ -19,18 +19,13 @@ for (let i: number = 1; i <= lineCount; i++) {
     for (let j: number = 1; j <= lineCount; j++) {
         if (i === 1 || i === lineCount) {
             toDraw += '%';
-
         } else if (j === 1 || j === lineCount) {
             toDraw += '%';
-
         } else if (i === j) {
                 toDraw += '%';
-
             } else {
                 toDraw += ' ';
-
             }
-
     }
     console.log(toDraw);
     toDraw = '';
