@@ -1,7 +1,6 @@
 'use strict';
 let lineCount: number = 4;
-let spaceToDraw: string = '';
-let starToDraw: string = '*';
+
 let line: string = '';
 // Write a program that draws a
 // pyramid like this:
@@ -15,14 +14,13 @@ let line: string = '';
 
 
 for (let row: number = 1; row <= lineCount; row++) {
-    for (let column: number = 1; column <= lineCount; column++) {
+    let spaceToDraw: string = '';
+    let starToDraw: string = '';
+    for (let space: number = 1; space <= (lineCount - row); space++) {
         spaceToDraw += ' ';
-        starToDraw += '*';
-
-
-
     }
-
-    console.log(starToDraw);
-
+    for (let star: number = 1; star <= 2 * row - 1; star++) {
+        starToDraw += '*';
+    }
+    console.log(spaceToDraw, starToDraw);
 }
