@@ -5,7 +5,7 @@ class Animal {
     isHealthy: boolean;
     healCost: number;
     name: string;
-    constructor(name: string, ownerName: string, isHealthy: boolean, healCost: number) {
+    constructor(name: string, isHealthy: boolean, ownerName?: string, healCost?: number) {
         this.name = name;
         this.ownerName = ownerName;
         this.isHealthy = isHealthy;
