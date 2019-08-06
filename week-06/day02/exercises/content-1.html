@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: innerHTML, textContent</title>
+</head>
+
+<body>
+  <p class="apple">apple</p>
+  <p class="balloon">banana</p>
+  <p class="cat">car</p>
+  <p class="animals">goat rabbit <strong>cat</strong> dog</p>
+
+
+  <script>
+    'use strict';
+
+    // 1)  Fill every paragraph with the last one's content.
+    let allElements = document.querySelectorAll('p');
+    let lastContent = document.querySelector('.animals').textContent;
+    allElements.forEach(function (element) {
+      element.textContent = lastContent;
+    });
+
+    // console.log('innerHTML:', apple.innerHTML);
+    // // console.log('textContent:', apple.textContent);
+
+    // let appleContent = document.querySelector('.apple').innerHTML;
+    // let balloonContent = document.querySelector('.balloon').innerHTML;
+    // let catContent = document.querySelector('.cat').innerHTML;
+    // let animalsContent = document.querySelector('.animals').textContent;
+    // console.log(appleContent, balloonContent, catContent, animalsContent);
+
+    // 2)  Do the same again, but you should keep the cat strong.
+    let allElements = document.querySelectorAll('p');
+    let lastContent = document.querySelector('.animals').innerHTML;
+    allElements.forEach(function (element) {
+      element.innerHTML = lastContent;
+    });
+  </script>
+
+</body>
+
+</html>>
