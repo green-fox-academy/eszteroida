@@ -8,14 +8,14 @@ class Manager extends Employee {
         this.moodLevel = 400;
     }
 
-    haveAMeeting() {
+    haveAMeeting(): void {
         this.moodLevel -= this.experience;
     }
-    work() {
+
+    work(): void {
         this.experience++;
         this.haveAMeeting();
     }
-
 }
 
 let bibi: Manager = new Manager('Bibi', 10)

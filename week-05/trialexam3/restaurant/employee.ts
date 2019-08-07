@@ -7,11 +7,10 @@ abstract class Employee {
         this.name = name;
         if (experience) {
             this.experience = experience;
-        } else {this.experience = 0};
+        } else { this.experience = 0 };
     }
 
-    work() {
-    }
+    abstract work();
 }
 
 export default Employee;
