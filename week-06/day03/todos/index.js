@@ -11,8 +11,8 @@ const todos = [
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.render('home', {title: 'Todos', todo: todos});
-});
+    res.render('home', {title: 'Todo list', todo: todos});
+}); 
 
 app.listen(PORT, () => {
     console.log(`App is listening on ${PORT}`);
