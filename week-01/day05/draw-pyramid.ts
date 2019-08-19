@@ -1,5 +1,5 @@
 'use strict';
-let lineCount: number = 4;
+let lineCount: number = 6;
 
 let line: string = '';
 // Write a program that draws a
