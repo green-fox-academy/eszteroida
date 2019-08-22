@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: EventListeners</title>
+</head>
+
+<body>
+  <button>Click me</button>
+
+  <script>
+    'use strict';
+    const bttn = document.querySelector('button');
+    // solution one
+    // function timeStamp() {
+    //   console.log(Date.now());
+    // }
+    // bttn.addEventListener('click', timeStamp, {once: true});
+
+     // solution two
+      function timeStamp() {
+      console.log(Date.now())
+      bttn.disabled = true;
+    }
+    timeStamp();
+  </script>
+
+</body>
+
+</html>
