@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: EventListeners</title>
+</head>
+
+<body>
+  <ul>
+    <li>apple</li>
+    <li>balloon</li>
+    <li>cat</li>
+    <li>dolphin</li>
+    <li>chicken</li>
+    <li>elephant</li>
+  </ul>
+  <button>How many items are in the list?</button>
+  <p class="result">dunno :(</p>
+
+  <script>
+    'use strict';
+    const button = document.querySelector('button');
+    const ul = document.getElementsByTagName('li');
+    const result = document.getElementsByClassName("result")[0];
+    //ha nem itt [0], akkor conuntItemsben result[0]
+    // vagy querySelector, mert az az elsőt adja ki
+    const countItems = () => {
+    result.textContent = ul.length;
+    };
+    button.addEventListener('click', countItems);
+  </script>
+
+
+</body>
+
+</html>
