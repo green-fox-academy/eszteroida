@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: promises</title>
+</head>
+
+<body>
+  <div class="container"></div>
+  <button>Gimme a joke </button>
+</body>
+
+<script type="text/javascript">
+  'use strict';
+  const URL = 'http://api.icndb.com/jokes/random';
+  let container = document.querySelector('div');
+  let button = document.querySelector('button');
+
+  button.addEventListener('click', () => {
+    let joke = document.createElement('section');
+    fetch(URL)
+      .then(response => response.json())
+      .then(parsedResponse =>
+        joke.innerHTML = `${parsedResponse.value.joke}`);
+    container.appendChild(joke);
+  });
+
+</script>
+
+</html>
