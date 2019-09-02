@@ -54,10 +54,12 @@ require('es6-promise');
 
 // task 6
 
-let promiseReject = Promise.reject(new Error('this has gone wrong'));
-let promiseResolve = Promise.resolve('this is good');
+// let promiseReject = Promise.reject(new Error('this has gone wrong'));
+// let promiseResolve = Promise.resolve('this is good');
 
-promiseResolve.then(console.log);
-promiseReject.catch((err) => {
-  console.log(err.message);
-});
+// promiseResolve.then(console.log);
+// promiseReject.catch((err) => {
+//   console.log(err.message);
+// });
+
+// task 7
