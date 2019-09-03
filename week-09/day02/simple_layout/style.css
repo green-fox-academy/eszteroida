@@ -16,14 +16,9 @@ Green: Sidebar (not main content) */
   margin: 10px 100px;
   grid-gap: 10px;
 }
-.navlink1,
-.navlink2,
-.navlink3,
-.navlink4 {
+header > div {
   background-color: #57e6f9;
   margin: 30px;
-  grid-column: span;
-  grid-row: span;
 }
 header {
   display: grid;
