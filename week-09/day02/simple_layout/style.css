@@ -1,0 +1,47 @@
+/* The layout should be centered on the page
+The layout should have fixed width
+When picking the semantically correct element, consider the roles of the boxes:
+Purple: Header
+Cyan: Navigation links
+Yellow: Main Content
+Green: Sidebar (not main content) */
+
+.container {
+	display: grid;
+  grid-template-columns: 300px 600px;
+  grid-column: center;
+  grid-template-rows: 600px 50px;
+	background-color: white;
+  width: 1000px;
+  margin: 10px 100px;
+  grid-gap: 10px;
+}
+.navlink1,
+.navlink2,
+.navlink3,
+.navlink4 {
+  background-color: #57e6f9;
+  margin: 30px;
+  grid-column: span;
+  grid-row: span;
+}
+header {
+  display: grid;
+  grid-template-columns: 15% 13% 19% 17%;
+  background-color: #a12df5;
+  width: 1100px;
+  height: 100px;
+  margin: 0 0 5px 0;
+}
+.sidebar {
+  background-color: #56d12a;
+}
+
+.main {
+  background-color: #f9cf3b;
+}
+footer {
+  background-color: #c1c1c1;
+  grid-column: 1 / 3;
+  
+}
