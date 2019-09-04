@@ -8,14 +8,12 @@ const app = express();
 //   "translated": "I am Groot!"
 // }
 // If no input is provided:
-// {
-//   "error": "I am Groot!"
-// }
+// { "error": "I am Groot!" }
 
 app.get('/groot', (req, res) => {
   if (req.query.message) {
     res.json({
-      received: "somemessage",
+      received: req.query.message,
       translated: "I am Groot!"
     });
   } else {
