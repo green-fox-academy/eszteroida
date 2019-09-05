@@ -1,37 +1,43 @@
 table {
 	width: 800px;
-	border-width: 20px;
-	background-color: rgb(77, 147, 238);
-  border: 1px solid #ccc;
-  border-spacing: 30px;
+  border: 40px solid rgb(77, 147, 238);
+  outline: rgb(77, 147, 238);
+  font-family: Arial;
+  border-collapse: collapse;
 }
 tbody tr:nth-child(odd) {
-  background-color: rgb(230, 230, 230);
+	background-color: rgb(230, 230, 230);
 }
 tbody tr:nth-child(even) {
-  background-color: rgb(253, 253, 253);
+	background-color: rgb(253, 253, 253);
 }
 th {
 	background-color: black;
 	color: #f0f0f0;
 	text-align: left;
-	font-size: 32px;
+  font-size: 32px;
+  font-family: Arial;
 	padding: 15px;
-  border: 1px solid #ccc;
-
+	border: 2px solid #ccc;
 }
 
 td {
 	font-size: 28px;
-  text-shadow: -1px -1px 1px #ccc;
-  color: rgb(83, 86, 114);
-  border: 1px solid #ccc;
-  padding: 15px;
+	text-shadow: -1px -1px 1px #ccc;
+	color: rgba(83, 86, 114, 0.534);
+	border: 2px solid #ccc;
+	padding: 15px;
 }
 td + td::before {
 	content: "$ ";
 }
 
+/* TODO 
+- round edges
+- change font
+- column width */
 
-
-odd line: 230 even line 244;
+/* @font-face {
+  font-family: ChampagneFont;
+  src: url();
+} */
