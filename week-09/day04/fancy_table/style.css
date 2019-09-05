@@ -2,7 +2,7 @@ table {
 	width: 800px;
   border: 40px solid rgb(77, 147, 238);
   outline: rgb(77, 147, 238);
-  font-family: Arial;
+  font-family: champagne__limousinesregular;
   border-collapse: collapse;
 }
 tbody tr:nth-child(odd) {
@@ -16,7 +16,7 @@ th {
 	color: #f0f0f0;
 	text-align: left;
   font-size: 32px;
-  font-family: Arial;
+  font-family: champagne__limousinesregular;
 	padding: 15px;
 	border: 2px solid #ccc;
 }
@@ -37,7 +37,11 @@ td + td::before {
 - change font
 - column width */
 
-/* @font-face {
-  font-family: ChampagneFont;
-  src: url();
+/* 
+@font-face {
+	font-family: 'champagne__limousinesregular';
+	src: url('champagnelimousines-webfont.woff2') format('woff2'),
+			 url('champagnelimousines-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 } */
