@@ -1,0 +1,27 @@
+main {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+div {
+	height: 150px;
+}
+.yellow {
+	background-color: #f9cf3b;
+}
+
+.green {
+	background-color: #56d12a;
+}
+
+.purple {
+	background-color: #a12df5;
+}
+
+@media (min-width: 480px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		width: 100%;
+	}
+}
