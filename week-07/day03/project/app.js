@@ -27,26 +27,37 @@ app.get('/doubling', (req, res) => {
 app.get('/greeter', (req, res) => {
   let message = {};
   if (req.query.name !== undefined && req.query.title !== undefined) {
-    message = { welcome_message: `Oh, hi there ${req.query.name}, my dear ${req.query.title}!` };
+    message = {
+      welcome_message: `Oh, hi there ${req.query.name}, my dear ${req.query.title}!`
+    };
   } else if (req.query.name === undefined && req.query.title !== undefined) {
-    message = { error: "Please provide a name!" }
+    message = {
+      error: "Please provide a name!"
+    };
   } else if (req.query.title === undefined && req.query.name !== undefined) {
-    message = { error: "Please provide a title!" }
+    message = {
+      error: "Please provide a title!"
+    };
   } else {
-    message = { error: "Please provide a name and a title!" };
+    message = {
+      error: "Please provide a name and a title!"
+    };
   }
   res.send(message);
 });
 
 app.get('/appenda/:appendable', (req, res) => {
-  let appended = {};
-  if (req.params.appendable === undefined) {
-    res.status(404)
+  if (req.params.appendable !== undefined) {
+    res.send ({
+      appended: req.params.appendable + 'a'
+    });
   } else {
-    appended = { appended : req.params.appendable + 'a'};
+    res.status(404)
   }
-  res.send(appended)
 })
+
+
+
 
 app.listen(PORT, () => {
   console.log(`The server is up and running on ${PORT}`);
