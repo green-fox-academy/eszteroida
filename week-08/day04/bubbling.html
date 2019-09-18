@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Workshop: EventListeners</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      text-align: center;
+    }
+
+    button {
+      margin: 16px;
+    }
+
+    .img-inspector {
+      margin: 0 auto;
+      width: 500px;
+      height: 320px;
+      border: 1px solid #3a3a3a;
+      background-image: url('./mp-2.jpg');
+
+      background-size: 200%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <button data-action="move" data-direction="up">Up</button>
+    <button data-action="move" data-direction="down">Down</button>
+    <button data-action="move" data-direction="left">Left</button>
+    <button data-action="move" data-direction="right">Right</button>
+    <button data-action="zoom" data-direction="in">Zoom in</button>
+    <button data-action="zoom" data-direction="out">Zoom out</button>
+  </nav>
+  <div class="img-inspector">
+  </div>
+
+  <script>
+    'use strict';
+
+    //  - the nav buttons (up, down, left, right) move the background by 10px
+    //  - the zoom buttons increase/decrease the image by 20%
+    //  - attach only two event listeners to the nav element
+    //    - one for navigation
+    //    - one for zooming
+
+    const nav = document.querySelector('nav');
+    const img = document.querySelector('.img-inspector');
+    let posX = 0;
+    let posY = 0;
+    let size = 200;
+
+    let moveLeft = () => {
+      posX += 10;
+    }
+
+    let moveRight = () => {
+      posX -= 10;
+    }
+
+    let moveUp = () => {
+      posY -= 10;
+    }
+
+    let moveDown = () => {
+      posY += 10;
+    }
+
+    let zoomIn = () => {
+      size += 20;
+    }
+
+    let zoomOut = () => {
+      size -= 20;
+    }
+    nav.addEventListener('click', event => {
+      if (event.target.dataset.direction == 'left') {
+        moveLeft();
+      } else if (event.target.dataset.direction == 'right') {
+        moveRight();
+      } else if (event.target.dataset.direction == 'up') {
+        moveUp();
+      } else if (event.target.dataset.direction == 'down') {
+        moveDown();
+      }
+      img.style.backgroundPosition = `${posX}px ${posY}px`;
+    });
+
+    nav.addEventListener('click', ev => {
+      if (ev.target.getAttribute('data-direction') === 'in') {
+        zoomIn();
+      } else if (ev.target.getAttribute('data-direction') === 'out') {
+        zoomOut();
+      }
+      img.style.backgroundSize = `${size}%`;
+    })
+
+    // nav.addEventListener('click', (ev) => {
+    //         if (ev.target.getAttribute('data-action') === 'move') {
+    //             switch (ev.target.getAttribute('data-direction')) {
+    //                 case 'up':
+    //                     posY -= 10;
+    //                     break;
+    //                 case 'down':
+    //                     posY += 10;
+    //                     break;
+    //                 case 'left':
+    //                     posX -= 10;
+    //                     break;
+    //                 case 'right':
+    //                     posX += 10;
+    //                     break;
+    //             }
+    //             img.style.backgroundPosition = `${posX}px ${posY}px`;
+    //         }
+    //     })
+  </script>
+
+</body>
+
+</html>
