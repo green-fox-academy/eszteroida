@@ -10,7 +10,7 @@ class Restaurant {
     name: string;
     yearOfFoundation: number;
     employeeList: (Waiter | Chef | Manager)[];
-    // also good : employeeList: Employee[];
+    // better : employeeList: Employee[];
 
     constructor(name: string, yearOfFoundation: number) {
         this.name = name;
@@ -19,11 +19,9 @@ class Restaurant {
     }
 
     guestsArrived(): void {
-        if (this.employeeList.length > 0) {
             this.employeeList.forEach(function (element) {
                 element.work();
-            })
-        }
+        });
     }
 
     hireEmployee(employee: Waiter | Chef | Manager): void {

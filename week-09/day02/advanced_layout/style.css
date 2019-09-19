@@ -1,0 +1,34 @@
+/* It should be centered on the page
+It should have fixed width
+Red boxes should automatically expand to row height */
+
+.container {
+	display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 2fr;
+	background-color: white;
+  width: 1000px;
+  margin: 10px 100px;
+  grid-gap: 10px;
+}
+header > div {
+  background-color: #57e6f9;
+  margin: 30px;
+}
+header {
+  display: grid;
+  grid-template-columns: 15% 13% 19% 17%;
+  background-color: #a12df5;
+  width: 1100px;
+  height: 100px;
+  margin: 0 0 5px 0;
+}
+.item1, .item2, .item3, .item4 {
+  background-color: #56d12a;
+}
+
+
+footer {
+  background-color: #c1c1c1;
+  grid-column: 1 / 3;
+}

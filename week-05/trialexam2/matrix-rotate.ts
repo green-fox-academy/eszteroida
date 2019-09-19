@@ -3,6 +3,15 @@
 let exampleMatrix: number[][] = [[1, 2, 3,], [4, 5, 6], [7, 8, 9]];
 let exampleMatrix2: number[][] = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]];
 
+function matrix(matrix): number[][] {
+    let newMatrix: number[][] = [];
+    for (let i: number = 0; i < matrix.length; i++) {
+        let row: number[] = [];
+        for (let j: number = 0; j < matrix.length; j++) {
+            row.push(matrix[i][j]);
+        } newMatrix.push(row);
+    } return newMatrix;
+}
 function rotateMatrix90Left(matrix): number[][] {
     let newMatrix: number[][] = [];
     for (let i: number = 0; i < matrix.length; i++) {
@@ -75,6 +84,7 @@ function flipMatrixBackslash(matrix): number[][] {
 }
 
 console.log(exampleMatrix);
+console.log(matrix(exampleMatrix));
 console.log(rotateMatrix90Left(exampleMatrix));
 console.log(rotateMatrix90Right(exampleMatrix));
 console.log(flipMatrixHorizontal(exampleMatrix));

@@ -15,5 +15,4 @@ try {
     content = 'Unable to read file: my-file.txt';
 }
 
-
 console.log(content);

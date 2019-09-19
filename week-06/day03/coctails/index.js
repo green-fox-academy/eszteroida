@@ -23,11 +23,8 @@ app.get('/', (req, res) => {
     //     cocktailList.push(cocktails[i])
     // }
 
-
     res.render('home', { title: 'Our coctail list', cocktails: cocktails });
 });
-
-
 
 
 app.listen(PORT, () => {

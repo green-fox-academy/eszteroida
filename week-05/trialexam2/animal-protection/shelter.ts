@@ -4,7 +4,6 @@ import Animal from './animals';
 import Cat from './cat';
 import Dog from './dog';
 import Parrot from './parrot';
-import { doesNotReject } from 'assert';
 
 class Shelter {
     budget: number;

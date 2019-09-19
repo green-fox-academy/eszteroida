@@ -13,19 +13,35 @@ const fs = require('fs');
 // into the file and each line should read 'apple'
 // The function should not raise any errors if it could not write the file.
 
-let pathToWrite: string = '/Users/eszteroida/eszter_h/week-03/day02/my-file.txt';
-let wordToWrite: string = 'apple';
-let writeInNewLine: string = '\n';
-let numberToWrite: number = 5;
-let content;
 
-try {
-    content = fs.readFileSync(pathToWrite, 'utf-8');
-    for (let i: number = 1; i <= numberToWrite; i++) {
-    fs.appendFileSync(pathToWrite, writeInNewLine + wordToWrite);
+function writeMultipleLines(path: string, word: string, linenumber: number): string {
+    let content: string;
+    content = fs.readFileSync(path, 'utf-8');
+    for (let i: number = 0; i < linenumber; i++) {
+        content += '\n' + word;
     }
-
-} catch (e) {
-    content = '';
+    fs.writeFileSync(path, content);
+    return content;
 }
-console.log(content);
+
+console.log(writeMultipleLines('my-file.txt', 'apple', 5));
+
+
+
+
+// let pathToWrite: string = '/Users/eszteroida/eszter_h/week-03/day02/my-file.txt';
+// let wordToWrite: string = 'apple';
+// let writeInNewLine: string = '\n';
+// let numberToWrite: number = 5;
+// let content;
+
+// try {
+//     content = fs.readFileSync(pathToWrite, 'utf-8');
+//     for (let i: number = 1; i <= numberToWrite; i++) {
+//         fs.appendFileSync(pathToWrite, writeInNewLine + wordToWrite);
+//     }
+
+// } catch (e) {
+//     content = '';
+// }
+// console.log(content);

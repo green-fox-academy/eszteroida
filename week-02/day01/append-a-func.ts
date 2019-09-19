@@ -7,7 +7,7 @@
 
 let typo: string = 'Chinchill';
 
-function appendAFunc(inputString) {
+function appendAFunc(inputString: string) {
 return inputString + 'a';
 }
 

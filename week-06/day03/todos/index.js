@@ -6,6 +6,7 @@ const todos = [
     'get up',
     'survive',
     'go back to bed',
+    'keep practising'
   ];
 
 app.set('view engine', 'ejs');

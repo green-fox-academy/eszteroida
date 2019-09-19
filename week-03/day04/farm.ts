@@ -30,7 +30,7 @@ class Farm {
     }
 }
 
-let newFarm = new Farm(Animal[], 10);
+let newFarm = new Farm(Animal[0], 10);
 newFarm.breed();
 newFarm.breed();
 newFarm.breed();

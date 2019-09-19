@@ -11,12 +11,11 @@ const fs = require('fs');
 
 let content;
 try {
-    content = fs.readFileSync('frus.txt', 'utf-8');
-    console.log(typeof content);
+    content = fs.readFileSync('my-file.txt', 'utf-8');
+    let lines: string[] = content.split('n');
+    console.log(lines.length);
 
-} catch (e){
-    console.log(e.message);
-    content ='';
+} catch (e) {
+    console.log('0');
 }
-let lines: string[] = content.split('n');
-console.log(lines.length);
+

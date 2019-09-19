@@ -13,6 +13,8 @@ module.exports = function anagrams(string1, string2) {
 
     if (stringArray1 !== stringArray2) {
         return false;
-    }
+    } else {
     return true;
+    }
 }
+/// else!!!!

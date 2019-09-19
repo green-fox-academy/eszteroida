@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- 
+Create the above layout
+The first input field is focused, that's why it's border is green
+Add HTML5 form validation to all input fields -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Login page</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="/send" method="POST">
+      <div id="title">
+        <p>ACCOUNT LOGIN</p>
+      </div>
+
+      <div class="username">
+        <label for="name">USERNAME</label>
+        <input type="text" name="name" id="name" autofocus placeholder="Your name" minlength="6" required>
+      </div>
+
+      <div class="password">
+        <label for="password">PASSWORD 🔐</label>
+
+        <div class="passwordinput">
+          <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+          <img class="eye" onclick="showPassword()" </div> 
+        </div> 
+        <button type="submit">LOGIN</button>
+        </div>
+
+      <div> 
+      <label for="forgot">Forgot password?</label>
+      
+      </div>
+        <script src="./main.js"></script>
+</body>
+
+</html>

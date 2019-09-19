@@ -17,10 +17,10 @@ let content;
 try {
     content = fs.readFileSync('my-file.txt', 'utf-8');
     fs.writeFileSync('my-file.txt', content + manipulated);
-    
+    console.log (content);
 } catch (e) {
     content = "Unable to write file: my-file.txt";
 }
-console.log(content);
+
 
 

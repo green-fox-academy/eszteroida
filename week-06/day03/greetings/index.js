@@ -9,7 +9,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/greet', (req, res) => {
-  
     res.render('home', { title: req.query.name || 'Guest' });
 });
 

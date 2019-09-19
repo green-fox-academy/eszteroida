@@ -3,12 +3,13 @@
 //  Returns a list of numbers where every number in the list occurs only once
 
 function unique(arr) {
-    arr.sort();
+  arr.sort();
     for (let i: number = 0; i <= arr.length; i++) {
-        if (arr[i] == arr[i + 1]) {
-            arr.splice(i, 1);
-        }
-    } return arr;
+      if (arr[i] == arr[i + 1]) {
+        arr.splice(i, 1);
+    }
+  }
+  return arr;
 }
 
 

@@ -10,10 +10,14 @@ const app = express();
 // }
 // Try time with zero! Look what happens!
 
-
 app.get('/yondu', (req, res) => {
-
+  const distance = req.query.distance;
+  const time = req.query.time;
+  res.send({
+    distance: 100,
+    time: 10,
+    speed : distance/time
+  })
 });
 
 module.exports = app;
-

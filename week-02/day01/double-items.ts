@@ -8,8 +8,8 @@
 let drinks: string[] = ['Gin', 'Whiskey', 'Wine', 'Beer'];
 
 let doubleDrinks: string[] = drinks.map(function (item) {
-
-    return item + item;
+    return item += item;
+    // return item + item;
 
 });
 

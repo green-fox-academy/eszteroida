@@ -25,10 +25,10 @@ for (let row: number = 1; row <= (lineCount + 1) / 2; row++) {
     console.log(spaceToDraw, starToDraw);
 }
 
-for (let row: number = 1; row <= (lineCount - 1) / 2; row++){
+for (let row: number = (lineCount - 1) / 2; row <= 1; row--){
     let spaceToDraw: string = '';
     let starToDraw: string = '';
-    for (let space :number = 1; space <= (lineCount - 1) / 2; space++) {
+    for (let space :number = (lineCount - row); space <= 1; space--) {
         spaceToDraw += ' ';
     }
     for (let star: number = 2 * row - 1; star <= 1; star--) {

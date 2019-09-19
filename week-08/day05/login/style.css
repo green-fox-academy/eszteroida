@@ -1,0 +1,25 @@
+.container {
+margin: 50px;
+padding: 10px;
+border: 1px solid black;
+background-color: white;
+position: center;
+justify-content: center
+}
+title{
+  font-size: 48px;
+}
+body {
+  margin: 50;
+  height: 40vh;
+  display: flex;
+  font-family: Arial, sans-serif;
+  position: center;
+  background-color: #f0f0f0;
+}
+
+
+
+form > * {
+  display: block;
+}

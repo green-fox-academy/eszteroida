@@ -2,9 +2,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
-const PORT = 3003;
-
-app.use(express.static('static'));
+const PORT = 3002;
 
 const connection = mysql.createConnection({
   host: 'localhost',
@@ -12,6 +10,9 @@ const connection = mysql.createConnection({
   password: 'password',
   database: 'bookstore',
 });
+
+app.use(express.static('static'));
+
 
 connection.connect(function (err) {
   if (err) {
@@ -22,8 +23,8 @@ connection.connect(function (err) {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
-})
+  res.sendFile('index.html', { root: __dirname });
+  });
 
 app.get('/titles', (req, res) => {
   let bookTitles = 'SELECT book_name FROM book_mast';

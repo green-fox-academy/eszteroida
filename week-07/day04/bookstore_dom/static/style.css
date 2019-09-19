@@ -1,0 +1,14 @@
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+header {
+	height: 50px;
+	color: lightsteelblue;
+	padding: 25px 0px 0px 10px;
+}
+#main {
+	background: lightsteelblue;
+	color: white;
+}

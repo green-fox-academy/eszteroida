@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pet</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="favourite">
+      <label for="question">What is your favourite pet?</label>
+      <label for="dog">dog</label>
+      <input type="radio" name="animal" id="dog" value="dog" />
+      <label for="cat">cat</label>
+      <input type="radio" name="animal" id="cat" value="cat" />
+      <label for="fish">Victor the goldfish</label>
+      <input type="radio" name="animal" id="fish" value="Victor the goldfish" />
+    </div>
+
+    <div class="signup">
+      <label for="question">Do you want to sign up for cat facts?</label>
+      <label for="yes"> Yes </label>
+      <input type="radio" name="signup" id="yes" value="yes"/>
+      <label for="no"> No </label>
+      <input type="radio" name="signup" id="no" value="no"/>
+    </div>
+
+
+    <div class="signup">
+      Create two buttons, both should be disabled by default
+      I love cats
+      Sign up
+      Assignment
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
+
+<!-- Form elements
+
+Radio buttons should be grouped, so it should be only possible to select one at a time
+If you choose Dog or Cat, it should enable the sign up button
+If you choose Yes for cat facts, it should enable the I love cats button
+Clicking on a button should alert:
+Thank you, you've successfully signed up for cat facts
+If you pick Victor and no to cat facts it should enable the sign up button only
+Clicking this time should display: Sigh, we still added you to the cat facts list -->

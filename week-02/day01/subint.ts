@@ -5,14 +5,28 @@
 //  Or returns an empty list if the number is not part of any of the numbers in the array
 
 
-function subint(index: number, array: number [])  {
-    let newArray: number [] = array.map(function (item) {
-
+function subint(index: number, array: number[]) {
+    let newArray: number[] = [];
+    array.forEach(function (element: number, index: number) {
+        let indexNumber: number = element.toString().indexOf(index.toString());
+        if (indexNumber >= 0)
+        newArray.push(index);
     })
-    array.filter(index);
 
-    
+
 }
+
+// function subint(tester: number, arr: number[]){
+//     let result: number[] = [];
+//     arr.forEach(function(value: number, index: number){
+//         let ind:number = value.toString().indexOf(tester.toString());
+//         if (ind >= 0){
+//             result.push(index);
+//         }
+
+//     })
+//     return result;
+// }
 
 
 // Example

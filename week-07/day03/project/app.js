@@ -48,7 +48,7 @@ app.get('/greeter', (req, res) => {
 
 app.get('/appenda/:appendable', (req, res) => {
   if (req.params.appendable !== undefined) {
-    res.send ({
+    res.send({
       appended: req.params.appendable + 'a'
     });
   } else {
@@ -56,8 +56,41 @@ app.get('/appenda/:appendable', (req, res) => {
   }
 })
 
+function summing(inputNumber) {
+  let sumOf = 0;
+  for (let i = 1; i <= inputNumber; i++) {
+    sumOf += i;
+  }
+  return sumOf;
+}
 
+const factorio = (inputNr) => {
+  let sumFact = 1;
+  for (let i = 1; i <= inputNr; i++) {
+    sumFact *= i;
+  }
+  return sumFact;
+}
 
+app.post('./dountil/:action', (req, res) => {
+  let numberUntil = req.body.until;
+  let response = {};
+
+  if (isNaN(numberUntil)) {
+    response = {
+      "error": "Please provide a number!"
+    };
+  } else if (req.params.action === 'factor') {
+    response = {
+    "result" : factorio(numberUntil)
+    };
+  } else if (req.params.action === 'sum') {
+    response = {
+      "result" : summing(numberUntil)
+      };
+  }
+  res.send(response);
+})
 
 app.listen(PORT, () => {
   console.log(`The server is up and running on ${PORT}`);
